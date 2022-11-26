@@ -47,7 +47,7 @@ export class LinearEquation extends Equation{
         const x = (parseInt(rightPartConstant) - parseInt(leftPartConstant)) / (parseInt(leftPartCoefficient) - parseInt(rightPartCoefficient));
         //5. Return the solution
 
-        //Example: 2x + 3 = 5x + 1
+        //Example: 2x+3=5x+1 no spaces
 
 
         
