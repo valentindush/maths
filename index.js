@@ -1,5 +1,20 @@
 "use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const arthimetic_1 = require("./functions/arthimetic");
-//export functions from arthimetic
-console.log((0, arthimetic_1.add)(12.5, 12.5));
+const LinearEq_1 = require("./functions/equations/linear/LinearEq");
+__exportStar(require("./functions/arthimetic"), exports);
+const eq1 = new LinearEq_1.LinearEquation('2x+3=5x+1');
+console.log("value of x: " + eq1.solve());
